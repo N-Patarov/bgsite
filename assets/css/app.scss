@@ -1,36 +1,49 @@
-/* This file is for your main application css. */
-@import "./phoenix.css";
+*
+{
+  padding: 0;
+  margin:0;
+}
+body{
+  background:rgb(235, 235, 7);
+  font-family:sans-serif;
+  background-size:cover;
+  background: position center;
+}
+.menu-bar{
+  background: rgb(235, 235, 7);
+  float:right;
+}
+.active{
+  text-align:center;
+  padding-left:
+}
+.menu-bar ul{
+  display:inline-flex;
+  list-style:none;
+  color: black;
+}
+.menu-bar ul li{
+  width:120px;
+  margin:15px;
+  padding:15px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color:black;
+}
+.active{
+  padding-right: 50px;
+}
+.active::after{
+content: '';
+display:block;
+width: 0;
+height: 2px;
+background: black;
+transition: width .3s;
+}
+.active:hover::after{
+  width:100%;
+  transition: width .3s;
+}
 
-/* Alerts and form errors */
-.alert {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-.alert-info {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-}
-.alert-warning {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-}
-.alert-danger {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #ebccd1;
-}
-.alert p {
-  margin-bottom: 0;
-}
-.alert:empty {
-  display: none;
-}
-.invalid-feedback {
-  color: #a94442;
-  display: block;
-  margin: -1rem 0 2rem;
-}
