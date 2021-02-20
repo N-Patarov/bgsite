@@ -7,14 +7,19 @@
 </head>
 <body>
 
-<div class = "menu-bar">
+<nav>
 <ul>
 <li class ="active"><a href = "#"><i class="fas fa-home"></i></a></li>
 <li class = "active"><a href = "#"><i class="fas fa-search"></i></a></li>
 <li class = "active"><a href = "#"><i class="fas fa-user"></i></a></li>
-<li class = "active"><a href = "#"><i class="fas fa-align-justify"></i></a>
+<li class><a href = "#"><i class="fas fa-align-justify"></i></a>
+<ul>
+<li><a href = "#">Top 100</a></li>
+<li><a href = "#">За нас</a></li>
+<li><a href = "#">Още</a></li>
+</ul>
 </li>
 </ul>
-</div>
+</nav>
 </body>
 </html>
